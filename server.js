@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 console.log(__dirname);
 console.log(__filename);
 
-const DB = 'mongodb+srv://vishalsinghvns:mongodb@cluster0.lchr3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const DB = 'mongodb+srv://<userid>:<password>@cluster0.lchr3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 mongoose.connect(DB).then(()=>{
     console.log("connection to DB made successfully");
 }).catch((error)=>{
